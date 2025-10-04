@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorites - MiniMart</title>
+    <link rel="stylesheet" href="styles/comman.css" />
+    <link rel="stylesheet" href="styles/favorites.css" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">Mini Markt</a>
+        </div>
+        <div class="mobile-menu">
+          <button class="bn" id="btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="nav-bar">
+          <ul class="links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="favorites.html">
+                <span class="icon-badge">
+                  <i class="fas fa-heart"></i>
+                  <div class="badge" id="favorites-count"></div>
+                </span>
+                Favorites
+              </a>
+            </li>
+            <li>
+              <a href="cart.html">
+                <span class="icon-badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <div class="badge" id="cart-count"></div>
+                </span>
+                Cart
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main-container">
+      <h1 class="section-title">Your Favorites</h1>
+      <div id="favorites-empty" class="empty-state">
+        <i class="fas fa-heart"></i>
+        <h3>No favorites yet</h3>
+        <p>Start adding products you love to your favorites</p>
+        <br />
+        <a href="products.html" class="btn-browse-products">Browse Products</a>
+      </div>
+
+      <div class="products-flex" id="favorites-container"></div>
+      <div id="notification" class="notification"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-info">
+        <h3>Created by Mohamed</h3>
+        <div class="footer-links">
+          <a
+            href="https://github.com/mohamedahmed1452"
+            target="_blank"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/your-linkedin"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:20201700656@cis.asu.edu.eg" title="Gmail">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/comman.js"></script>
+    <script src="scripts/favorites.js"></script>
+  </body>
+</html>

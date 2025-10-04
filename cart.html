@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - MiniMart</title>
+    <link rel="stylesheet" href="styles/comman.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html">Mini Markt</a>
+        </div>
+        <div class="mobile-menu">
+          <button class="bn" id="btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="nav-bar">
+          <ul class="links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+              <a href="favorites.html">
+                <span class="icon-badge">
+                  <i class="fas fa-heart"></i>
+                  <div class="badge" id="favorites-count"></div>
+                </span>
+                Favorites
+              </a>
+            </li>
+            <li>
+              <a href="cart.html">
+                <span class="icon-badge">
+                  <i class="fas fa-shopping-cart"></i>
+                  <div class="badge" id="cart-count"></div>
+                </span>
+                Cart
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main-container">
+      <h1 class="section-title">Your Cart</h1>
+      <div id="cart-empty" class="empty-state">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>Your cart is empty</h3>
+        <p>Add some products to your cart to continue shopping</p>
+        <br />
+        <a href="products.html" class="btn-browse-products">Browse Products</a>
+      </div>
+
+      <div id="cart-content">
+        <div class="cart-items" id="cart-items-container"></div>
+
+        <div class="cart-summary">
+          <h3 class="summary-title">Order Summary</h3>
+          <div class="summary-item">
+            <p>Subtotal</p>
+            <p id="cart-subtotal">$0.00</p>
+          </div>
+          <div class="summary-item">
+            <p>Shipping</p>
+            <p id="Shipping">$5.00</p>
+          </div>
+          <div class="summary-item summary-total">
+            <p>Total</p>
+            <p id="cart-total">$0.00</p>
+          </div>
+          <a href="checkout.html" id="checkout-btn" class="checkout-btn"
+            >Proceed to Checkout</a
+          >
+        </div>
+      </div>
+      <div id="notification" class="notification"></div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-info">
+        <h3>Created by Mohamed</h3>
+        <div class="footer-links">
+          <a
+            href="https://github.com/mohamedahmed1452"
+            target="_blank"
+            title="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/your-linkedin"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:20201700656@cis.asu.edu.eg" title="Gmail">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/comman.js"></script>
+    <script src="scripts/cart.js"></script>
+  </body>
+</html>
