@@ -93,22 +93,3 @@ function removeFromCart(productId) {
   loadCart();
 }
 
-function updateCartTotals(cart, products) {
-  let cartSubtotal = document.getElementById("cart-subtotal");
-  let cartTotal = document.getElementById("cart-total");
-  let Shipping = document.getElementById("Shipping");
-
-  let subtotal = 0;
-  for (let i = 0; i < cart.length; i++) {
-    for (let j = 0; j < products.length; j++) {
-      if (cart[i].id === products[j].id) {
-        subtotal += products[j].price * cart[i].quantity;
-      }
-    }
-  }
-  let Ship = 5.0;
-  let total = subtotal + Ship;
-  Shipping.innerHTML = `$${Ship.toFixed(2)}`;
-  cartSubtotal.innerHTML = `$${subtotal.toFixed(2)}`;
-  cartTotal.innerHTML = `$${total.toFixed(2)}`;
-}

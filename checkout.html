@@ -48,9 +48,23 @@
 
     <main class="container">
       <h1 class="section-title">Checkout</h1>
+      <div class="cart-summary">
+        <h3 class="summary-title">Order Summary</h3>
+        <div class="summary-item">
+          <p>Subtotal</p>
+          <p id="cart-subtotal">$0.00</p>
+        </div>
+        <div class="summary-item">
+          <p>Shipping</p>
+          <p id="Shipping">$5.00</p>
+        </div>
+        <div class="summary-item summary-total">
+          <p>Total</p>
+          <p id="cart-total">$0.00</p>
+        </div>
+      </div>
 
       <div id="checkout-content">
-
         <form class="checkout-form" id="checkout-form">
           <h3 class="title-shipping">Shipping Information</h3>
 
@@ -105,8 +119,6 @@
           >Continue Shopping</a
         >
       </div>
-
-
 
       <div id="notification" class="notification"></div>
     </main>

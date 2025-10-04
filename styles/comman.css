@@ -249,6 +249,37 @@ body {
 
 
 
+/* cart and checkout*/
+.cart-summary {
+    background-color: #374151;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.summary-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.summary-total {
+    font-size: 22px;
+    font-weight: 700;
+    border-top: 2px solid #4a5568;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+
+
+
 @media (max-width: 768px) {
 
 

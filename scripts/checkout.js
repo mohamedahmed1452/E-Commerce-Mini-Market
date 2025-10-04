@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", initChackoutPage);
 
 function initChackoutPage() {
   main();
+  updateCartTotals(cart, allProducts);
   let form = document.getElementById("checkout-form");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
