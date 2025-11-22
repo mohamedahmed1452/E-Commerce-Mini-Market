@@ -7,7 +7,7 @@ The project demonstrates key e-commerce features like **product listings**, **sh
 
 ## 🚀 Demo
 
-👉 **[Live Demo](https://fastidious-klepon-7f433a.netlify.app/)**  
+👉 **[Live Demo](https://react-app-g9y5.vercel.app/)**  
 *(Replace with your actual deployed link — e.g., GitHub Pages or Netlify)*
 
 ---
